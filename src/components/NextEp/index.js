@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
-import EpisodeItem from "../EpisodeItem"
+import AddToCalendar from "../AddToCalendar"
 import "./index.scss"
 
 export default () => (
@@ -51,9 +50,7 @@ export default () => (
             </p>
           </div>
           <div className="item">
-            <a href={url} target="_blank" className="button outline">
-              Add to Calendar
-            </a>
+            <AddToCalendar />
           </div>
         </div>
       )
